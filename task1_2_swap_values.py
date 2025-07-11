@@ -7,4 +7,6 @@ def swap_values(a: int, b: int) -> tuple:
     Returns:
         tuple: A tuple containing the swapped values (b, a)
     """
-    return
+    a, b = b, a
+    return (a, b)
+print(swap_values(12, 23))
