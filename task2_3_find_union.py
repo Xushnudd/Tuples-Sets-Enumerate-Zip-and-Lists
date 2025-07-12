@@ -7,4 +7,6 @@ def find_union(set1: set, set2: set) -> set:
     Returns:
         set: Union of both sets
     """
-    return
+    a = set1.union(set2)
+    return a
+print(find_union({1, 2}, {2, 3}))
