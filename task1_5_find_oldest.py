@@ -6,4 +6,11 @@ def find_oldest(people: list) -> tuple:
     Returns:
         tuple: A tuple containing (name, age) of the oldest person
     """
-    return
+    k = 0
+    n = ""
+    for i, y in people:
+        if y>k:
+            k = y
+            n = i
+    return n, k
+print(find_oldest([("Ali", 20), ("Sara", 25), ("John", 22)]))

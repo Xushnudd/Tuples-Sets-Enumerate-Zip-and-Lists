@@ -6,4 +6,9 @@ def check_seven(numbers: tuple) -> bool:
     Returns:
         bool: True if 7 is in the tuple, False otherwise
     """
-    return
+    a = False
+    for i in numbers:
+        if i == 7:
+            a = True
+    return a
+print(check_seven((1, 2, 3, 4)))
