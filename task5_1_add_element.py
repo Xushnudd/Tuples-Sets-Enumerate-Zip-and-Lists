@@ -7,4 +7,5 @@ def add_element(lst: list, element: any) -> list:
     Returns:
         list: List with the new element added
     """
-    return
+    return lst+[element]
+print(add_element([1, 2, 3], 4))

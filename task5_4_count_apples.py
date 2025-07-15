@@ -6,4 +6,9 @@ def count_apples(items: list) -> int:
     Returns:
         int: Number of times "apple" appears in the list
     """
-    return
+    a = 0
+    for i in items:
+        if i == "apple":
+            a+=1
+    return a
+print(count_apples(["apple", "banana", "apple"]))

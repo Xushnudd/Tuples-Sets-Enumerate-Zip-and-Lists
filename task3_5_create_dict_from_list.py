@@ -6,4 +6,8 @@ def create_dict_from_list(items: list) -> dict:
     Returns:
         dict: Dictionary with indices as keys and items as values
     """
-    return
+    a = {}
+    for i, b in enumerate(items):
+        a[i]=b
+    return a
+print(create_dict_from_list(["cat", "dog", "fish"]))

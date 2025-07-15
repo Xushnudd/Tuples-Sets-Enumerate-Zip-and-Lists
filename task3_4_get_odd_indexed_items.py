@@ -6,4 +6,6 @@ def get_odd_indexed_items(items: list) -> list:
     Returns:
         list: Items at odd indexes
     """
-    return
+    a = items[1::2]
+    return a
+print(get_odd_indexed_items([2, 4, 6, 3, 8]))

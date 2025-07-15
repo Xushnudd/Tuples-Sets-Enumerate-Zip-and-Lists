@@ -6,4 +6,9 @@ def sort_descending(numbers: list) -> list:
     Returns:
         list: List sorted in descending order
     """
-    return
+    for i in range(len(numbers)):
+        for j in range(i + 1, len(numbers)):
+            if numbers[i] < numbers[j]:
+                numbers[i], numbers[j] = numbers[j], numbers[i]
+    return numbers
+print(sort_descending([5, 2, 9, 1]))
